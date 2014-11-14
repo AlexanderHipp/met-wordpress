@@ -8,4 +8,14 @@ Template:       twentyfourteen
 Version:        1.0
 */
 
-@import url("../iot-child/style.css");
+/*@import url("../iot-child/style.css");*/
+@import url('bootstrap/css/bootstrap.min.css');
+
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.container > .row {
+  padding: 50px 0;
+}
