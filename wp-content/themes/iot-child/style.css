@@ -1,0 +1,11 @@
+/*
+Theme Name:     IoT Child
+Theme URI:      http: //iot.de/
+Description:    Child Theme for the IoT theme
+Author:         Alexander Hipp
+Author URI:     http: //iot.de/
+Template:       twentyfourteen
+Version:        1.0
+*/
+
+@import url("../iot-child/style.css");
