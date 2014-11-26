@@ -1,334 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Composer</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <title>Smart Homes</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body><!-- NAVBAR -->
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Smart Homes</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#">How it works</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Products</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Management & Apps</a></li>
+                          <li><a href="#">Security</a></li>
+                          <li><a href="#">Locator</a></li>
+                          <li><a href="#">Climate Control</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Future</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav><!-- CAROUSEL -->
+        <!-- /.container -->
+    </nav>
 
-<div id="carousel-top" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-top" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-top" data-slide-to="1"></li>
-    <li data-target="#carousel-top" data-slide-to="2"></li>
-  </ol>
+    <!-- Header -->
+    <div class="intro-header">
 
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://lorempixel.com/1920/600/business/Slide" alt="...">
-      <div class="carousel-caption">
-        <h1>At vero eos</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-      </div>
-    </div>
+        <div class="container">
 
-    <div class="item">
-      <img src="http://lorempixel.com/1900/600/transport/Slide" alt="...">
-      <div class="carousel-caption">
-        <h1>At vero eos</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-      </div>
-    </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Smart Homes</h1>
+                        <h3>Looking forward or scared already?</h3>
 
-    <div class="item">
-      <img src="http://lorempixel.com/1900/600/nature/Slide" alt="...">
-      <div class="carousel-caption">
-        <h1>At vero eos</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-      </div>
-    </div>
-  </div>
+                    </div>
+                </div>
+            </div>
 
-  <a class="left carousel-control" href="#carousel-top" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-top" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div><div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <div id="carousel1" class="carousel slide">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel1" data-slide-to="1"></li>
-          <li data-target="#carousel1" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="http://lorempixel.com/600/400/city" alt="" />
-          </div>
-
-          <div class="item">
-            <img src="http://lorempixel.com/600/400/transport" alt="" />
-          </div>
-
-          <div class="item">
-            <img src="http://lorempixel.com/600/400/business" alt="" />
-          </div>
         </div>
+        <!-- /.container -->
 
-        <a class="left carousel-control" href="#carousel1" data-slide="prev">
-          <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel1" data-slide="next">
-          <span class="icon-next"></span>
-        </a>
-      </div>
     </div>
+    <!-- /.intro-header -->
 
-    <div class="col-lg-6">
-      <h3>An other example of Two Columns</h3>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <h3>An other example of Two Columns</h3>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <h3>An other example of Two Columns</h3>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-    </div>
-  </div>
-</div><div class="container">
-  <div class="row">
-    <div class="col-lg-7">
-      <h2>An other example of Two Columns</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna</p>
-      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-    </div>
+    <!-- Page Content -->
 
-    <div class="col-lg-5">
-      <div class="list-group">
-        <a href="#" class="list-group-item active">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent cursus magna.</p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent cursus magna.</p>
-        </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent cursus magna.</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</div><div class="container">
-  <div class="row">
-    <div class="col-lg-3">
-      <div class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/city" alt="" />
-        <div class="caption">
-          <h4>Thumbnail label</h4>
-          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">Buy</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/business" alt="" />
-        <div class="caption">
-          <h4>Thumbnail label</h4>
-          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">Buy</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/technics" alt="" />
-        <div class="caption">
-          <h4>Thumbnail label</h4>
-          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">Buy</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/people" alt="" />
-        <div class="caption">
-          <h4>Thumbnail label</h4>
-          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a href="#" class="btn btn-primary">Buy</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><div class="container">
-  <div class="row">
-    <div class="col-lg-2">
-      <a href="#" class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/g/300/80/abstract" alt="" />
-      </a>
-    </div>
-    <div class="col-lg-2">
-      <a href="#" class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/g/300/80/technics" alt="" />
-      </a>
-    </div>
-    <div class="col-lg-2">
-      <a href="#" class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/g/300/80/business" alt="" />
-      </a>
-    </div>
-    <div class="col-lg-2">
-      <a href="#" class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/g/300/80/nature" alt="" />
-      </a>
-    </div>
-    <div class="col-lg-2">
-      <a href="#" class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/g/300/80/people" alt="" />
-      </a>
-    </div>
-    <div class="col-lg-2">
-      <a href="#" class="thumbnail">
-        <img class="img-square img-responsive" src="http://lorempixel.com/g/300/80/transport" alt="" />
-      </a>
-    </div>
-  </div>
-</div><div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <div><h2>About</h2></div>
-      <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+    <div class="content-section-a">
 
-      <div><h2>Newsletter</h2></div>
-      <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      <form>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Email Address">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Subscribe</button>
-          </span>
-        </div>
-      </form>
-    </div>
+        <div class="container">
 
-    <div class="col-md-4">
-        <div><h2>Blog Posts</h2></div>
-        <div class="media">
-          <a class="pull-left" href="#">
-            <img src="http://lorempixel.com/g/60/60/business" alt="" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Lorem Ipsum</h4>
-            <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id erat.</p>
-          </div>
-        </div>
-        <div class="media">
-          <a class="pull-left" href="#">
-            <img src="http://lorempixel.com/g/60/60/transport" alt="" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Lorem Ipsum</h4>
-            <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id erat.</p>
-          </div>
-        </div>
-        <div class="media">
-          <a class="pull-left" href="#">
-            <img src="http://lorempixel.com/g/60/60/city" alt="" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Lorem Ipsum</h4>
-            <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id erat.</p>
-          </div>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">What is the Internet of Things <br />and how does it work</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/placeholder2.jpg" alt="">
+                </div>
+            </div>
 
-    <div class="col-md-4">
-      <div><h2>Contacts</h2></div>
-      <address>
-        11, I do not Know<br />
-        New York, US <br />
-        Phone: 999 153 2346 <br />
-        Fax: 951 373 5432 <br />
-        Email: <a href="mailto:info@yourdomain.com" class="">info@yourdomain.com</a>
-      </address>
+        </div>
+        <!-- /.container -->
 
-      <div><h2>Socials</h2></div>
-        <a href="#"><img src="./img/social/Facebook.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Twitter.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Google+.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Pinterest.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Linkedin.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Myspace.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Dribbble.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Youtube.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Flickr.png" alt="" /></a>
-        <a href="#"><img src="./img/social/Tumblr.png" alt="" /></a>
     </div>
-  </div>
-</div>     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  </body>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Explore different smart products</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/placeholder1.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Where does the journey lead to?</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/placeholder3.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Get informed now</h2>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#home">Smart Homes</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">How it works</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Products</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Future</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
