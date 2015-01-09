@@ -77,7 +77,7 @@
 
 	<?php $header_image = get_header_image();
 	if ( ! empty( $header_image ) ) : ?>
-	<div id="site-header">
+	<div id="site-header" class="<?php if ( is_page() ) {echo 'header-half';} ?>">
 	<?php
 	if ( is_singular() && has_post_thumbnail( $post->ID ) ) :
 		echo get_the_post_thumbnail( $post->ID, 'full', 'class=header-image' );

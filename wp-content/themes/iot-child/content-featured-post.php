@@ -15,10 +15,8 @@
 		if ( has_post_thumbnail() ) :
 			if ( 'grid' == get_theme_mod( 'featured_content_layout' ) ) {
 				the_post_thumbnail();
-				echo "hallo";
 			} else {
 				the_post_thumbnail( 'twentyfourteen-full-width' );
-				echo "hallo";
 			}
 		endif;
 	?>
@@ -30,7 +28,7 @@
 			<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
-
+		hallo
 		<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h1>' ); ?>
 	</header><!-- .entry-header -->
 </article><!-- #post-## -->
