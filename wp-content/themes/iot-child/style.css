@@ -199,6 +199,14 @@ footer {
     background-color: #f8f8f8;
 }
 
+
+.search footer,
+.single-post footer,
+.archive footer {
+  display:none;
+}
+
+
 p.copyright {
     margin: 15px 0 0;
 }
@@ -279,7 +287,7 @@ p.copyright {
 }
 
 .home article:nth-child(2n+1) {
-  margin-right: 20px;
+  margin-left: 20px;
 
 }
 
@@ -304,7 +312,7 @@ p.copyright {
 
 .search-box,
 .site-header {
-  background: rgba(0, 0, 0, 0.3);
+  background: #999;
 }
 
 .primary-navigation ul ul {
@@ -335,6 +343,10 @@ footer.entry-meta,
 .single-post .post-navigation a,
 #comments {
   border-radius: 2px;
+}
+
+.entry-content {
+  padding-top:25px!important;
 }
 
 .search-box-wrapper {
@@ -391,6 +403,9 @@ footer.entry-meta,
   display:none;
 }
 
+.archive #secondary,
+.category #secondary,
+.search #secondary,
 .single-post #secondary {
   width: 20%;
   min-height:0px;
@@ -398,14 +413,24 @@ footer.entry-meta,
   padding:0px;
 }
 
+.archive #main,
+.category #main,
+.search #main,
 .single-post #main {
   margin-top:30px;
 }
 
+.archive #content,
+.category #content,
+.search #content,
 .single-post #content {
   width: 78%;
   float: right;
 }
+
+.archive #site-header,
+.search #site-header,
+.category #site-header {display:none;}
 
 .single-post article,
 .single-post article footer {
@@ -414,9 +439,13 @@ footer.entry-meta,
 
 .single-post .entry-header {
   top: 614px!important;
-  z-index: 99!important;
+  z-index: 3!important;
   width: 1140px!important;
   left: 0px!important;
+}
+
+.sub-menu {
+  z-index:41;
 }
 
 .single-post .entry-title {
@@ -440,6 +469,7 @@ footer.entry-meta,
 
  .primary-navigation {
    float:left;
+   margin-left:0px;
  }
 
 
@@ -520,9 +550,12 @@ footer.entry-meta,
   border:none;
   background:#232323;
 }
-.secondary-navigation a,
-.secondary-navigation + .primary-sidebar {
+.secondary-navigation a {
   padding:15px 30px 15px 15px!important;
+}
+
+.secondary-navigation + .primary-sidebar {
+  padding:15px 30px 135px 15px!important;
 }
 
 .secondary-navigation {
@@ -534,6 +567,7 @@ footer.entry-meta,
   width:228px;
   background:#232323;
   padding:15px 30px;
+  margin-bottom:20px;
 }
 
 .footer-sidebar .widget .widget-title, .primary-sidebar .widget .widget-title {
@@ -610,4 +644,136 @@ footer .widget a {
 
 .page .entry-content {
   padding:30px;
+}
+
+.claim-header h2 {
+  text-transform:uppercase;
+  margin-bottom:0px;
+  background:#232323;
+
+  color:#fff;
+}
+
+
+.claim-header h4,
+.archive-header,
+.search .page-header {
+  margin-top:0px;
+  background:#fff;
+}
+
+.search .page-header {
+  border: none;
+}
+
+
+.claim-header h4,
+.claim-header h2,
+.search .page-header,
+.archive-header {
+  border-radius:2px;
+  width:100%;
+  text-align:center;
+  padding:30px;
+  line-height:inherit;
+}
+
+.search .page-header,
+.archive-header {
+  max-width:none;
+  margin-bottom:30px;
+}
+
+.search article,
+.archive article {
+  position:relative;
+}
+
+.search .entry-header,
+.archive .entry-header {
+  position: absolute!important;
+  max-width: none!important;
+  bottom: 0px!important;
+  width: 100%!important;
+}
+
+.search .entry-header a,
+.archive .entry-header a {
+  color:#fff;
+}
+
+.site-navigation .current_page_item > a,
+.site-navigation .current_page_ancestor > a,
+.site-navigation .current-menu-item > a,
+.site-navigation .current-menu-ancestor > a {
+  color:#fff;
+  background:#343434;
+}
+
+.footer-sidebar {
+  height:55px!important;
+}
+
+.widget a:hover,
+a:hover,
+a,
+.entry-meta a:hover,
+.post-navigation a:hover,
+.image-navigation a:hover {
+  color: #ec3e0b;
+}
+
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background: #ec3e0b;
+}
+
+.size-full {width:100%
+}
+
+.entry-content iFrame {
+  width: 100%;
+  height: 470px;
+}
+
+
+.search article.page .entry-header {
+  position:relative!important;
+}
+
+.search article.page .entry-header a {
+  color:#232323;
+}
+
+.tab-three {
+  width: 32%;
+  float: left;
+  text-align: center;
+  margin-right: 1%;
+}
+
+.alignright {
+  margin-right:0px!important;
+}
+
+.wp-caption-text {
+  text-align:center;
+}
+
+
+#page {
+  margin: 65px auto;
+}
+
+.site-header {
+  max-width: none;
+  position: relative;
+}
+
+.masthead-fixed .site-header {
+  position: relative;
+  top: 0;
 }
